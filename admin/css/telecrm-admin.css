@@ -1,0 +1,1004 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); */
+
+:root {
+    --text: #1e1f24;
+    --primary: #fff;
+    --secondary: #f4f5f9;
+    --border: #9b9b9b;
+    --accent: mediumslateblue;
+}
+
+#telecrm-plugin-form .tcrm-telecrm-plugin-class {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text);
+    height: 100vh;
+    animation: modalAnimation 0.35s linear;
+}
+
+#telecrm-plugin-form .tcrm-search-box {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+#telecrm-plugin-form .tcrm-search-wrapper {
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+    background: white;
+}
+
+#telecrm-plugin-form a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#telecrm-plugin-form .tcrm-d-none {
+    display: none !important;
+}
+
+#telecrm-plugin-form .tcrm-d-flex {
+    display: flex;
+}
+
+#telecrm-plugin-form .tcrm-d-block {
+    display: block;
+}
+
+#telecrm-plugin-form .tcrm-d-grid {
+    display: grid;
+}
+
+
+#telecrm-plugin-form .tcrm-img-container {
+    width: fit-content;
+    margin: auto;
+}
+
+#telecrm-plugin-form .tcrm-cancel-btn {
+    color: red !important;
+    background: white !important;
+    border: 1px solid #fe03037d !important;
+}
+
+#telecrm-plugin-form .tcrm-no-new-forms {
+    margin: auto;
+    width: fit-content;
+    font-size: large;
+    margin-top: 150px;
+}
+
+#telecrm-plugin-form #tcrm-integrated-pages-divider {
+    border-top: 1.5px dashed #d3d3d3;
+    position: absolute;
+    width: 100%;
+    transform: translateY(10px);
+}
+
+#telecrm-plugin-form #tcrm-integrated-pages-divider+span {
+    display: block;
+    color: #d3d3d3;
+    margin: auto;
+    width: fit-content;
+    background: white;
+    position: relative;
+    z-index: 5;
+    padding: 0px 5px;
+}
+
+#telecrm-plugin-form #tcrm-integrated-pages-divider.tcrm-d-none+span {
+    display: none;
+}
+
+#telecrm-plugin-form h3 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#telecrm-plugin-form .tcrm-carousel {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    white-space: nowrap;
+    max-width: 600px;
+    padding: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+#telecrm-plugin-form #tcrm-right-chevron {
+    position: absolute;
+    right: 4px;
+    z-index: 5;
+    /* background: transparent; */
+    transform: rotate(-90deg);
+    background: white;
+    padding: 3px 4px;
+    border-radius: 50%;
+    box-shadow: #0000003d 0 0px 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#telecrm-plugin-form #tcrm-left-chevron {
+    position: absolute;
+    left: 4px;
+    z-index: 5;
+    /* background: transparent; */
+    transform: rotate(90deg);
+    background: white;
+    padding: 3px 4px;
+    border-radius: 50%;
+    box-shadow: #0000003d 0 0px 8px;
+    cursor: pointer;
+}
+
+#telecrm-plugin-form .tcrm-pr10 {
+    padding-right: 10px;
+}
+
+#telecrm-plugin-form .tcrm-carousel-img {
+    width: 600px;
+}
+
+#telecrm-plugin-form .tcrm-carousel-img-cover {
+    transition: all 0.35s;
+}
+
+#telecrm-plugin-form a:hover {
+    text-decoration: underline;
+}
+
+#telecrm-plugin-form .tcrm-grid {
+    display: grid;
+    position: relative;
+    gap: 15px;
+}
+
+#telecrm-plugin-form .tcrm-flex {
+    display: flex;
+    width: 100%;
+}
+
+#telecrm-plugin-form .tcrm-center {
+    align-items: center;
+}
+
+#telecrm-plugin-form .tcrm-main-heading {
+    color: #291059;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 1.1;
+}
+
+#telecrm-plugin-form .tcrm-heading-container {
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    gap: 15px;
+}
+
+#telecrm-plugin-form .tcrm-telecrm-info-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+#telecrm-plugin-form .tcrm-telecrm-color {
+    color: mediumslateblue;
+}
+
+#telecrm-plugin-form .tcrm-get-start-container {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+#telecrm-plugin-form .tcrm-get-start-btn {
+    width: fit-content !important;
+    padding: 10px 60px !important;
+    margin-bottom: 10px !important;
+    margin-top: 0px !important;
+}
+
+#telecrm-plugin-form .tcrm-info-part {
+    color: rgb(125 119 119);
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+#telecrm-plugin-form .tcrm-welcome-screen {
+    width: min(calc(100% - 1rem), 1024px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: 0 0 0 4px var(--secondary);
+    transition: all 0.35s;
+    background: white;
+    position: relative;
+    padding: 20px 0px;
+}
+
+#telecrm-plugin-form .tcrm-telecrm-img {
+    border-bottom-left-radius: 10px;
+    border: 1px solid rgba(147, 147, 147, 0.06);
+    box-shadow: 0 0 4px rgb(147 139 139);
+    height: 95%;
+}
+
+#telecrm-plugin-form .tcrm-a-flex-center{
+    display:flex;
+    align-items:center;
+}
+
+#telecrm-plugin-form .tcrm-mt10{
+   margin-top:10px;
+}
+
+
+
+#telecrm-plugin-form .tcrm-page-grid {
+    width: min(calc(100% - 1rem), 1024px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: 0 0 0 4px var(--secondary);
+    transition: all 0.35s;
+}
+
+#telecrm-plugin-form .tcrm-banner img {
+    width: 150px;
+}
+
+#telecrm-plugin-form .tcrm-addedField {
+    animation: opacityAnimation 0.35s linear;
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+}
+
+#telecrm-plugin-form .tcrm-website-text {
+    color: var(--accent);
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#telecrm-plugin-form .tcrm-form-wrapper,
+#telecrm-plugin-form .tcrm-banner {
+    overflow-y: auto;
+    height: 100%;
+}
+
+#telecrm-plugin-form .tcrm-form-wrapper {
+    background: white;
+    border-radius: 10px;
+}
+
+#telecrm-plugin-form .tcrm-pt0 {
+    padding-top: 0 !important;
+}
+
+#telecrm-plugin-form .tcrm-header {
+    font-weight: 500;
+    margin: 0rem, 15px;
+    background: white;
+    padding: 10px;
+    padding-left:5px;
+    line-height: normal;
+    z-index: 11;
+}
+
+#telecrm-plugin-form .tcrm-no-forms-found {
+    display: none;
+    margin: auto;
+    width: fit-content;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+#telecrm-plugin-form .tcrm-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#telecrm-plugin-form .tcrm-field {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 98%;
+}
+
+#telecrm-plugin-form .tcrm-addField {
+    text-decoration: underline;
+    color: var(--accent);
+    cursor: pointer;
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+#telecrm-plugin-form .tcrm-field input:not(.tcrm-multiselect input),
+#telecrm-plugin-form .tcrm-field .tcrm-multiselect {
+    font-size: 12px;
+    /* line-height: 35px; */
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    outline: none;
+    position: relative;
+    box-shadow: none;
+}
+
+#telecrm-plugin-form .tcrm-field input::placeholder {
+    font-family: inherit;
+}
+
+#telecrm-plugin-form .tcrm-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    background: var(--secondary);
+    /* line-height: 48px; */
+    font-family: inherit;
+    padding: 15px 0px;
+    font-size: inherit
+}
+
+#telecrm-plugin-form .tcrm-btn-primary {
+    background: var(--accent);
+    color: var(--primary);
+    position: sticky;
+    bottom: 0;
+    margin: auto;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+#telecrm-plugin-form .tcrm-google-sign-in svg {
+    width: 18px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+#telecrm-plugin-form .tcrm-pass-section {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#telecrm-plugin-form .tcrm-banner {
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+
+    #telecrm-plugin-form .tcrm-flex {
+        display: flex;
+        width: 100%;
+    }
+
+    #telecrm-plugin-form .tcrm-page-grid {
+        grid-template-columns: repeat(1, 2fr 1.5fr);
+    }
+
+    #telecrm-plugin-form .tcrm-banner {
+        background: var(--secondary);
+        order: 2;
+    }
+
+    #telecrm-plugin-form .tcrm-banner img {
+        width: 250px;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    #telecrm-plugin-form .tcrm-flex {
+        display: flex;
+        width: 100%;
+    }
+}
+
+#telecrm-plugin-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 700px;
+    margin-top: 20px;
+    animation: modalAnimation 0.35s linear;
+
+}
+
+#telecrm-plugin-form.tcrm-activation-page {
+    z-index: 99999;
+    position: fixed;
+    background: #0000004f;
+}
+
+@keyframes modalAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#telecrm-plugin-form .tcrm-back-arrow {
+    transform: rotate(90deg);
+}
+
+#telecrm-plugin-form-close {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#telecrm-plugin-form .tcrm-btnClass {
+    position: absolute;
+    width: calc(100% - 20px);
+    bottom: 0;
+    margin: 10px;
+    background: white;
+    z-index: 35;
+}
+
+#telecrm-plugin-form .tcrm-form-section {
+    overflow: auto;
+    height: calc(100% - 60px);
+}
+
+#telecrm-plugin-form .tcrm-error {
+    font-size: smaller;
+    margin-left: 0;
+
+}
+
+#telecrm-plugin-form .tcrm-updated {
+    font-size: smaller;
+    margin-left: 0;
+
+}
+
+#telecrm-plugin-form .tcrm-labels {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#telecrm-plugin-form .tcrm-sub-head {
+    display: flex;
+    align-items: flex-end;
+    color: #afacac;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+#telecrm-plugin-form .tcrm-error-message {
+    color: #FFC46B;
+    border: 1px solid #e1000075;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-right: 5px;
+    background: #FFF8EC;
+    border: 1px solid #F7D9A4;
+    margin-top: auto;
+    height: fit-content;
+}
+
+#telecrm-plugin-form .tcrm-error-prompt {
+    color: #e10000d1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+#telecrm-plugin-form .tcrm-page-meta-data {
+    flex-shrink: 0;
+    max-width: 80%;
+}
+
+#telecrm-plugin-form .tcrm-page-url {
+    margin: 0 !important;
+    font-size: 12px;
+    outline: none;
+    align-items: center;
+    display: flex;
+    box-shadow: none;
+}
+
+.d-contents {
+    display: contents !important;
+}
+
+#telecrm-plugin-form .tcrm-removeField {
+    border-radius: 50%;
+    border: 1px solid #b4acac;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3.5px;
+    padding-left: 3.5px;
+    padding-top: 0.5px;
+    padding-bottom: 1.5px;
+    cursor: pointer;
+}
+
+#telecrm-plugin-form .tcrm-add-new-page {
+    background: var(--primary) !important;
+    color: #000000b5 !important;
+    border: 1px solid #00000036 !important;
+}
+
+#telecrm-plugin-form input:disabled,
+.tcrm-multiselect.tcrm-disabled {
+    color: #3934348c;
+    pointer-events: none;
+    background: #8080800a;
+}
+
+#telecrm-plugin-form .tcrm-btn.tcrm-disabled {
+    pointer-events: none;
+}
+
+
+#telecrm-plugin-form .tcrm-multiselect {
+    padding: 0 !important;
+    cursor: pointer;
+
+}
+
+#telecrm-plugin-form .tcrm-multiselect-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#telecrm-plugin-form .tcrm-mslabel {
+    user-select: none;
+}
+
+#telecrm-plugin-form .tcrm-mstogglebtn {
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+    outline: none;
+}
+
+#telecrm-plugin-form .tcrm-mslist {
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+
+}
+
+#down-chevron {
+    user-select: none;
+    transition: all 0.35s;
+
+}
+
+.tcrm-multiselect>.tcrm-mslist:last-child:hover,
+.tcrm-multiselect>*:last-child:focus,
+.tcrm-multiselect:focus-within .tcrm-mslist {
+    animation: modalAnimation 0.35s;
+    max-height: 250px;
+    height: fit-content !important;
+    overflow: auto !important;
+    pointer-events: auto;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    top: 30px;
+    border-top: none;
+    z-index: 36;
+    box-shadow: #0000003d 0 3px 8px;
+}
+
+
+#telecrm-plugin-form .tcrm-msitem {
+    position: relative;
+    transition: background 400ms;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#telecrm-plugin-form .tcrm-msitem.tcrm-no-effect:hover {
+    background: white !important;
+}
+
+#telecrm-plugin-form .tcrm-msitem.no-effect {
+    cursor: default;
+}
+
+#telecrm-plugin-form .tcrm-msitem.no-effect {
+    justify-content: space-between;
+}
+
+#telecrm-plugin-form .tcrm-msitem.no-effect * {
+    cursor: default;
+}
+
+#telecrm-plugin-form .tcrm-msitem.no-effect a {
+    cursor: pointer;
+}
+
+#telecrm-plugin-form .tcrm-msitem:hover:not(.tcrm-search-wrapper) {
+    background: #eee;
+}
+
+#telecrm-plugin-form .tcrm-msitem label {
+
+
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+#telecrm-plugin-form .tcrm-msitem label .tcrm-title {
+    line-height: 1.2;
+}
+
+
+#telecrm-plugin-form .tcrm-msitem label .tcrm-link {
+    line-height: 1.7;
+    color: grey;
+    font-size: 12px;
+}
+
+#telecrm-plugin-form .tcrm-msitem:last-child label {
+    border-bottom: 0px;
+}
+
+#telecrm-plugin-form .tcrm-multiselect>*:not(:last-child):focus,
+.tcrm-mstogglebtn:focus,
+.tcrm-mslabel:focus,
+.tcrm-multiselect:focus {
+    pointer-events: none;
+    /* Causes second click to close */
+    transition: all 0.3s linear;
+    user-select: none;
+
+
+
+}
+
+#telecrm-plugin-form .tcrm-loader {
+    border: 2px solid #f3f3f3;
+    border-top: 1px solid rgb(123, 104, 238);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    animation: spin 2s linear infinite;
+    margin-left: 15px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#telecrm-plugin-form .tcrm-dropdown-input {
+    pointer-events: none;
+}
+
+#telecrm-plugin-form .tcrm-instructions li {
+    font-size: 12px;
+}
+
+#telecrm-plugin-form .tcrm-form {
+    /* border: 1px solid #d3d3d3; */
+    margin:10px 0;
+    border-radius: 10px;
+}
+
+#telecrm-plugin-form #tcrm-page-mappings {
+    /* border: 1px solid #d3d3d3; */
+    margin:10px;
+}
+
+#telecrm-plugin-form .tcrm-form.tcrm-hide .tcrm-accordion {
+    display: none;
+}
+
+#telecrm-plugin-form .tcrm-form.tcrm-visible .tcrm-accordion {
+    display: block;
+}
+
+#telecrm-plugin-form .tcrm-page-name-container {
+    padding: 10px;
+    position: sticky;
+    top: -6px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    background: white;
+    z-index: 10;
+    border: 1px solid var(--border);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#telecrm-plugin-form .tcrm-accordion {
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#telecrm-plugin-form .tcrm-mapping-container {
+    animation: opacityAnimation 0.35s linear;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    /* margin-top: 10px; */
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#telecrm-plugin-form .tcrm-d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#telecrm-plugin-form .tcrm-telecrm-website-mapping .tcrm-mapping-div:last-child .tcrm-info-container {
+    border-bottom: none;
+}
+
+#telecrm-plugin-form .tcrm-page-header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    align-content: stretch;
+    justify-content: flex-start;
+}
+
+#telecrm-plugin-form .tcrm-page.hide .tcrm-mapping-label-cover {
+    display: none;
+}
+
+#telecrm-plugin-form .tcrm-page.visible .tcrm-mapping-label-cover {
+    margin-top: 0;
+    position: sticky;
+    top: 56px;
+    background: white;
+    z-index: 35;
+
+}
+
+#telecrm-plugin-form .tcrm-info-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    color: #8F8F8F;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b4acac;
+
+}
+
+
+
+#telecrm-plugin-form .tcrm-up-chevron {
+    transform: rotate(180deg);
+}
+
+#telecrm-plugin-form .tcrm-w100p {
+    width: 100%;
+}
+
+#telecrm-plugin-form .tcrm-mb5 {
+    margin-bottom: 5px;
+}
+
+#telecrm-plugin-form .tcrm-telecrm-website-mapping {
+    padding: 0px 10px;
+}
+
+#tcrm-account-details {
+    margin: 10px;
+}
+
+#telecrm-plugin-form .tcrm-visible .tcrm-accordion {
+    /* max-height: 250px; */
+    height: fit-content;
+    border: 1px solid #d3d3d3;
+    border-top: 0px;
+    border-radius: 0px 0px 10px 10px;
+    /* animation: openMenuAnimation 0.35s; */
+}
+
+#telecrm-plugin-form .tcrm-hide .tcrm-accordion {
+    animation: closeMenuAnimation 0.35s;
+    height: 0px;
+    overflow: hidden;
+}
+
+#telecrm-plugin-form .tcrm-hide .tcrm-page-name-container {
+    border-radius: 10px;
+}
+
+#telecrm-plugin-form ::placeholder {
+    color: #b4acac;
+}
+
+#telecrm-plugin-form .tcrm-page-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+@keyframes openMenuAnimation {
+    0% {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    100% {
+        max-height: 1000px;
+        overflow: hidden;
+    }
+}
+
+
+@keyframes closeMenuAnimation {
+    0% {
+        max-height: 1000px;
+        overflow: hidden;
+    }
+
+    100% {
+        max-height: 0;
+        overflow: hidden;
+    }
+}
+
+#telecrm-plugin-form ::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+}
+
+#telecrm-plugin-form ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#telecrm-plugin-form ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#telecrm-plugin-form ::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:focus {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+#telecrm-plugin-form p {
+    margin: 0;
+}
+
+#telecrm-plugin-form ul {
+    list-style: disc;
+}
+
+#telecrm-plugin-form .tcrm-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#telecrm-plugin-form .tcrm-switch {
+ position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+}
+
+#telecrm-plugin-form .tcrm-switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#telecrm-plugin-form .tcrm-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#telecrm-plugin-form .tcrm-slider:before {
+     position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+#telecrm-plugin-form input:checked + .tcrm-slider {
+  background-color: mediumslateblue;
+}
+
+
+#telecrm-plugin-form input:disabled + .tcrm-slider {
+  pointer-events:none;
+}
+
+#telecrm-plugin-form input:focus + .tcrm-slider {
+  box-shadow: 0 0 1px mediumslateblue;
+}
+
+#telecrm-plugin-form input:checked + .tcrm-slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+#telecrm-plugin-form .tcrm-slider.tcrm-round {
+  border-radius: 34px;
+}
+
+#telecrm-plugin-form .tcrm-slider.tcrm-round:before {
+  border-radius: 50%;
+}
+
+#telecrm-plugin-form .cursor-na{
+    cursor:not-allowed;
+}
+
+#telecrm-plugin-form .tcrm-mb-10 {
+    margin-bottom: 10px;
+}
