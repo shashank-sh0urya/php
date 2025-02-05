@@ -1,0 +1,22 @@
+name: PHP Security Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dependency_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Install Snyk
+        run: npm install -g snyk
+
+      - name: Authenticate with Snyk
+        run: snyk auth c6dc57cf-a782-48c4-a221-0c9ec2ec5219
+
+      - name: Run Snyk Dependency Scan
+        run: snyk test
